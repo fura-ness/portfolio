@@ -1,19 +1,21 @@
 A full-featured web-based database client for managing SQL queries and asynchronous execution.
 
-Roles: idea conception, product design and owner, initial/lead developer
+My role: idea conception, product design and owner, architect and initial/lead developer
 
-Technologies: Python, Django, PostgreSQL, Redis, RQ, Bootstrap, AWS Redshift, Presto
+Technologies: Python, Django, PostgreSQL, Redis, RQ, Bootstrap, AWS Redshift, Presto, gunicorn, nginx
+
 
 ## Features
 
-* Database schema browser
 * Edit and save SQL queries
-* Automatic SQL reformatting
+* Automatic SQL reformatting & syntax highlighting
 * Document and share links to queries and execution results, search/browse other users' work
-* Queries run server-side, long-running queries don't require user to remain on the network
+* Database schema browser
+* Query execution is server-side, long-running queries don't require user to remain on the network
 * Deliver results to an email address, Amazon S3, or to a table in any managed database
+* Copy results from one database type to another, (eg. PostgreSQL to MySQL,) translating data types as needed 
 * Email notifications and alerts based on query execution status and conditions in results data
-* Query execution scheduling
+* Scheduled query execution
 * Scheduled workflows of arbitrary sequences of operations
 * Query execution metadata allows warnings and alerts about long-running queries, bad query patterns
 * Interpretation and categorization of query failure error messages (user error vs. server error)
