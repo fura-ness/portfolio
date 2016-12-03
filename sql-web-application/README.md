@@ -7,7 +7,7 @@ Technologies: Python, Django, PostgreSQL, Redis, RQ, Bootstrap, AWS Redshift, Pr
 
 ## Features
 
-* Edit and save SQL queries
+* Edit, save, and version control SQL queries
 * Automatic SQL reformatting & syntax highlighting
 * Document and share links to queries and execution results, search/browse other users' work
 * Database schema browser
