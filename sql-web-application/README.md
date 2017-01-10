@@ -8,18 +8,19 @@ Technologies: Python, Django, PostgreSQL, Redis, RQ, Bootstrap, AWS Redshift, Pr
 ## Features
 
 * Edit, save, and version control SQL queries
-* Automatic SQL reformatting & syntax highlighting
 * Document and share links to queries and execution results, search/browse other users' work
-* Database schema browser
-* Query execution is server-side, long-running queries don't require user to remain on the network
+* Automatic SQL reformatting & syntax highlighting
+* Automatic charting and configurable C3.js charts without coding
+* Database schema and table browser
+* All query executions are async and server-side, removing need for user to remain on the network
 * Deliver results to an email address, Amazon S3, or to a table in any managed database
-* Copy results from one database type to another, (eg. PostgreSQL to MySQL,) translating data types as needed 
-* Email notifications and alerts based on query execution status and conditions in results data
-* Scheduled query execution
+* Copy results from one database type to another, translating column types as needed 
+* Email and Slack notifications and alerts based on execution status and conditions in results data
+* Scheduled query executions
 * Scheduled workflows of arbitrary sequences of operations
 * Query execution metadata allows warnings and alerts about long-running queries, bad query patterns
 * Interpretation and categorization of query failure error messages (user error vs. server error)
-* Automatic retry of non-user-error failures
+* Automatic retry of certain non-user-error failures
 * REST API and Python library for programmatic use
 * Supported databases: PostgreSQL, Presto, Redshift, MySQL
 
